@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mirani Handmade Hungary</title>
+    <link rel="icon" type="image/x-icon" href="img/titleicon.PNG">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!--Cookiek-->
+    <div id="cookies">
+        <div>Az oldal sütiket használ. A 'Rendben' gombra kattintva ezt elfogadhatod.</div>
+        <button id="btn-cookie">Rendben</button>
+    </div>
+    
+    <!--Navbar-->
+    <div id="navi" class="navbar-1">
+        <div class="container-1 flex">
+            <a href="index.html"><img src="img/logo.jpg" alt=""></a>
+            <nav class="nav-2">
+                <span class="open-slide nav-mg">
+                    <a href="#" onclick="openSlideMenu()">
+                        <i class="fa fa-bars fa" aria-hidden="true"></i>
+                    </a>
+                </span>
+                <div class="tablet">
+                    <a href="index.html"><img src="img/logo.jpg" alt=""></a>
+                    <ul class="nav-display nav-mg">
+                        <div class="dropdown">
+                            <button onclick="dropbtn()" class="dropbtn">Karkötők<i
+                                    class="drop-fa fa fa-caret-down"></i></button>
+                            <div id="myDropdown" class="dropdown-content">
+                                <a href="woman.html">Női</a>
+                                <a href="man.html">Férfi</a>
+                            </div>
+                        </div>
+                        <li><a href="keychains.html">Kulcstartók</a></li>
+                        <li><a href="sets.html">Szettek</a></li>
+                        <li><a href="info.html">Információk</a></li>
+                        <li><a href="contacts.html"><i class="fa fa-fw fa-envelope"></i> Kapcsolat</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="social nav-mg">
+                <div class="social-1">
+                    <a href="https://www.facebook.com/profile.php?id=100075477592398"><i
+                            class="fab fa-facebook"></i></a>
+                </div>
+                <div class="social-2">
+                    <a href="https://www.tiktok.com/@miranihandmadehungary"><i class="fab fa-tiktok"></i></a>
+                </div>
+                <div class="social-3">
+                    <a href="https://www.instagram.com/miranihandmadehungary/"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <!--Hidden side menu-->
+
+            <div id="side-menu" class="side-nav">
+                <a href="#" class="btn-close-1" onclick="closeSlideMenu()">&times;</a>
+                <button class="dropdown-btn">Karkötők<i class="fa fa-caret-down"></i></button>
+                <div class="dropdown-container">
+                    <a href="woman.html">Női</a>
+                    <a href="man.html">Férfi</a>
+                </div>
+                <a href="keychains.html">Kulcstartók</a>
+                <a href="sets.html">Szettek</a>
+                <a href="info.html">Információk</a>
+                <a href="contacts.html"><i class="fa fa-fw fa-envelope"></i> Kapcsolat</a>
+            </div>
+        </div>
+    </div>
+
+    <!--Informations-->
+
+    <section class="sect-3 p-3 bg-1 mg-top text-3">
+                <h3 class="text-3"><img id="infopic" src="img/infologo.png" alt=""> Rendelési Információk </h3>
+                <p class="order">Rendelésed leadhatod Facebookon Nekem közvetlenül, Illetve megtalálsz a Meska oldalán
+                    is
+                    Mirani
+                    néven.</p>
+                <p class="order">TikTokon és Instán is fent vagyok, a fenti linkek az oldalamra vezetnek.</p>
+                <img id="handpic" src="img/hand.png" alt="">
+    </section>
+
+    <section class="sect-3 p-3 bg-1 text-3">
+                <h3 class="text-3">Így készül <span class="mcolor">Mirani</span>ékszered...</h3>
+                <div class="videos">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/z_R9Gs1E8MM" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+    </section>
+
+    <section class="sect-3 p-3 bg-1">
+                <h3 class="text-3">Ásványok hatásai</h3>
+                <div class="mineral">
+                    <h4>Achát</h4>
+                    <p>Elnyeli és átalakítja a negatív energiákat. Tisztító hatása fizikai és érzelmi szinten erőteljes.
+                        Jótékony hatással van a szemre, gyomorra,tisztítja a nyirokrendszert és a hasnyálmirigyet.</p>
+                </div>
+                <div class="mineral">
+                    <h4>Howlit</h4>
+                    <p>Nyugtató hatású. Enyhíti az álmatlanságot. Jótékonyan hat a fogakra, a csontokra és a puha
+                        szövetekre.</p>
+                </div>
+                <div class="mineral">
+                    <h4>Jade</h4>
+                    <p> A tisztaság és nyugalom jelképe. Megszabadít a negatív gondolatoktól, és nyugtatja az elmét.
+                        Jótékony hatással van a vesékre és a mellékvesékre. Eltávolítja a méreganyagokat. Fokozza a
+                        termékenységet.</p>
+                </div>
+                <div class="mineral">
+                    <h4>Jáspis</h4>
+                    <p>Stresszes időkben támogat, nyugalmat és a teljesség érzetét biztosítja. Bátorságot biztosít
+                        abban,
+                        hogy szembenézzünk problémáinkkal. Segíti a gyors gondolkodást, serkenti a képzeletet. A jáspis
+                        támogatja a keringési, az emésztő- és az ivarszerveket. Egyensúlyban tartja a test ásványi anyag
+                        tartalmát.
+                    </p>
+                </div>
+                <div class="mineral">
+                    <h4>Ónix</h4>
+                    <p>Erőt ad, támogatást biztosít nehéz vagy zavaros körülmények között. Fokozza az életerőt és a
+                        kitartást. Általánosságban önuralmat biztosít. Jótékonyan hat a fogakra, a csontokra, a
+                        csontvelőre.
+                    </p>
+                </div>
+                <div class="mineral">
+                    <h4>Hegyikristály</h4>
+                    <p>A leghatékonyabb gyógyító és energiafelerősítő kristály a Földön. Mindig annak az energiának a
+                        rezgésszintjén fejti ki a hatását, amely nélkülözhetetlen a gyógyulásunkhoz. A hegyikristály
+                        mestergyógyító, és bármilyen betegségre használható. Élénkíti az immunrendszert, és egyensúlyba
+                        hozza a szervezetet. </p>
+                </div>
+                <div class="mineral">
+                    <h4>Rózsakvarc</h4>
+                    <p>A feltétel nélküli szeretet és a végtelen béke köve. Nyugtat, bíztat és kitűnű a hatása trauma
+                        vagy
+                        krízis idején. Bevonzza a szerelmet és a kapcsolatokat. A rózsakvarc finoman eltávolítja az
+                        negatív
+                        energiát és szeretetteljes hangulattal helyettesíti. A legnemesebb gyógyító. Erősíti a szívet és
+                        a
+                        keringési rendszert.</p>
+                </div>
+                <div class="mineral">
+                    <h4>Rodonit</h4>
+                    <p>Érzelmileg kiegyensúlyoz, táplálja a szeretetet és az embertársaink iránt érzett bajtársiasságot.
+                        Gyógyítja az érzelmi sokkot és pánikot. Kiváló sebgyógyító és jól enyhíti a rovarcsípéseket.</p>
+                </div>
+                <div class="mineral">
+                    <h4>Tigrisszem</h4>
+                    <p>Védelmet nyújtó kő. Megkönnyíti a célok megvalósítását. Rendbe hozza az önértékelési zavarok, az
+                        önbírálat és a blokkolt kreativitás következményeit. Jótékonyan hat a szemre, és fejleszti a
+                        sötétben való látást.</p>
+                </div>
+                <div class="mineral">
+                    <h4>Lávakő</h4>
+                    <p>méregtelenítő, erősiti az izmokat. Biztosítja az egyensúlyt a szervezetben, nyugtatja az
+                        idegrendszert.</p>
+                    </div>
+
+    </section>
+
+    <!--Footer-->
+
+    <footer>
+        <div>
+            <div>
+                <h5>Mirani Handmade Hungary</h5>
+                <p>Copyright &copy; 2022</p>
+            </div>
+            <div class="social-foot">
+                <a href="https://www.facebook.com/profile.php?id=100075477592398"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.tiktok.com/@miranihandmadehungary"><i class="fab fa-tiktok"></i></a>
+                <a href="https://www.instagram.com/miranihandmadehungary/"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!--Cookiek-->
+    <script>
+        let btn_1 = document.querySelector("#btn-cookie");
+        btn_1.addEventListener("click", function () {
+            document.querySelector("#cookies").style.display = "none";
+        });
+    </script>
+
+    <!--Menu dropdown script-->
+
+    <script>
+        function dropbtn() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn, .drop-fa')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!--Show-hide main menu script-->
+
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function () {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById('navi').style.top = "0";
+            } else {
+                document.getElementById('navi').style.top = "-195px";
+            }
+            prevScrollpos = currentScrollPos;
+        }
+    </script>
+
+    <!--Show side menu script-->
+
+    <script>
+        function openSlideMenu() {
+            document.getElementById('side-menu').style.width = '250px';
+            document.getElementById('main').style.marginLeft = '250px';
+        }
+
+        function closeSlideMenu() {
+            document.getElementById('side-menu').style.width = '0px';
+            document.getElementById('main').style.marginLeft = '0px';
+        }
+    </script>
+
+    <!--Side menu dropdown script-->
+
+    <script>
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+
+        for (i = 0; i < dropdown.length; i++) {
+            dropdown[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var dropdownContent = this.nextElementSibling;
+                if (dropdownContent.style.display === "block") {
+                    dropdownContent.style.display = "none";
+                } else {
+                    dropdownContent.style.display = "block";
+                }
+            });
+        }
+    </script>
+    <!--Bootstrap-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>

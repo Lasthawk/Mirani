@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mirani Handmade Hungary</title>
+    <link rel="icon" type="image/x-icon" href="img/titleicon.PNG">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!--Cookiek-->
+    <div id="cookies">
+        <div>Az oldal sütiket használ. A 'Rendben' gombra kattintva ezt elfogadhatod.</div>
+        <button id="btn-cookie">Rendben</button>
+    </div>
+
+    <!--Navbar-->
+    <div id="navi" class="navbar-1">
+        <div class="container-1 flex">
+            <a href="index.html"><img src="img/logo.jpg" alt=""></a>
+            <nav class="nav-2">
+                <span class="open-slide nav-mg">
+                    <a href="#" onclick="openSlideMenu()">
+                        <i class="fa fa-bars fa" aria-hidden="true"></i>
+                    </a>
+                </span>
+                <div class="tablet">
+                    <a href="index.html"><img src="img/logo.jpg" alt=""></a>
+                    <ul class="nav-display nav-mg">
+                        <div class="dropdown">
+                            <button onclick="dropbtn()" class="dropbtn">Karkötők<i
+                                    class="drop-fa fa fa-caret-down"></i></button>
+                            <div id="myDropdown" class="dropdown-content">
+                                <a href="woman.html">Női</a>
+                                <a href="man.html">Férfi</a>
+                            </div>
+                        </div>
+                        <li><a href="keychains.html">Kulcstartók</a></li>
+                        <li><a href="sets.html">Szettek</a></li>
+                        <li><a href="info.html">Információk</a></li>
+                        <li><a href="contacts.html"><i class="fa fa-fw fa-envelope"></i> Kapcsolat</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="social nav-mg">
+                <div class="social-1">
+                    <a href="https://www.facebook.com/profile.php?id=100075477592398"><i
+                            class="fab fa-facebook"></i></a>
+                </div>
+                <div class="social-2">
+                    <a href="https://www.tiktok.com/@miranihandmadehungary"><i class="fab fa-tiktok"></i></a>
+                </div>
+                <div class="social-3">
+                    <a href="https://www.instagram.com/miranihandmadehungary/"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <!--Hidden side menu-->
+
+            <div id="side-menu" class="side-nav">
+                <a href="#" class="btn-close-1" onclick="closeSlideMenu()">&times;</a>
+                <button class="dropdown-btn">Karkötők<i class="fa fa-caret-down"></i></button>
+                <div class="dropdown-container">
+                    <a href="woman.html">Női</a>
+                    <a href="man.html">Férfi</a>
+                </div>
+                <a href="keychains.html">Kulcstartók</a>
+                <a href="sets.html">Szettek</a>
+                <a href="info.html">Információk</a>
+                <a href="contacts.html"><i class="fa fa-fw fa-envelope"></i> Kapcsolat</a>
+            </div>
+        </div>
+    </div>
+
+    <!--KeyChains-->
+
+    <section class="sect-4 p-3 bg-1 mg-top">
+        <h3 class="text-3"><span class="mcolor">Mirani</span>Kulcstartók</h3>
+        <div class="grid-1 text-3 flex-2">
+            <div class="card center m-2" style="width: 18rem;">
+                <img class="myImages-1 myImg-1" src="img/keychain/20220522_112818.jpg" alt="Monogramos 1"
+                    style="width:100%;max-width:300px">
+                <div class="card-body">
+                    <p class="card-text">Monogramos 1</p>
+                </div>
+            </div>
+            <div class="card center m-2" style="width: 18rem;">
+                <img class="myImages-1 myImg-1" src="img/keychain/20220522_112852.jpg" alt="Monogramos 2"
+                    style="width:100%;max-width:300px">
+                <div class="card-body">
+                    <p class="card-text">Monogramos 2</p>
+                </div>
+            </div>
+            <div class="card center m-2" style="width: 18rem;">
+                <img class="myImages-1 myImg-1" src="img/keychain/20220903_123613.jpg" alt="Anyának"
+                    style="width:100%;max-width:300px">
+                <div class="card-body">
+                    <p class="card-text">Anyának</p>
+                </div>
+            </div>
+            <div class="card center m-2" style="width: 18rem;">
+                <img class="myImages-1 myImg-1" src="img/keychain/20220903_123646.jpg" alt="Rózsás, szivecskés"
+                    style="width:100%;max-width:300px">
+                <div class="card-body">
+                    <p class="card-text">Rózsás, szivecskés</p>
+                </div>
+            </div>
+            <div class="card center m-2" style="width: 18rem;">
+                <img class="myImages-1 myImg-1" src="img/keychain/20220903_123705.jpg" alt="Szivecskés"
+                    style="width:100%;max-width:300px">
+                <div class="card-body">
+                    <p class="card-text">Szivecskés</p>
+                </div>
+                <div id="myModal-1" class="modal-1">
+                    <img class="modal-content-1" src="#" alt="" id="img01">
+                    <div id="caption-1"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Footer-->
+
+    <footer>
+        <div>
+            <div>
+                <h5>Mirani Handmade Hungary</h5>
+                <p>Copyright &copy; 2022</p>
+            </div>
+            <div class="social-foot">
+                <a href="https://www.facebook.com/profile.php?id=100075477592398"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.tiktok.com/@miranihandmadehungary"><i class="fab fa-tiktok"></i></a>
+                <a href="https://www.instagram.com/miranihandmadehungary/"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!--Cookiek-->
+    <script>
+        let btn_1 = document.querySelector("#btn-cookie");
+        btn_1.addEventListener("click", function () {
+            document.querySelector("#cookies").style.display = "none";
+        });
+    </script>
+
+    <!--Menu dropdown script-->
+    <script>
+        function dropbtn() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn, .drop-fa')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!--Show-hide main menu script-->
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function () {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById('navi').style.top = "0";
+            } else {
+                document.getElementById('navi').style.top = "-195px";
+            }
+            prevScrollpos = currentScrollPos;
+        }
+    </script>
+
+    <!--Show side menu script-->
+    <script>
+        function openSlideMenu() {
+            document.getElementById('side-menu').style.width = '250px';
+            document.getElementById('main').style.marginLeft = '250px';
+        }
+
+        function closeSlideMenu() {
+            document.getElementById('side-menu').style.width = '0px';
+            document.getElementById('main').style.marginLeft = '0px';
+        }
+    </script>
+
+    <!--Side menu dropdown script-->
+    <script>
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+
+        for (i = 0; i < dropdown.length; i++) {
+            dropdown[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var dropdownContent = this.nextElementSibling;
+                if (dropdownContent.style.display === "block") {
+                    dropdownContent.style.display = "none";
+                } else {
+                    dropdownContent.style.display = "block";
+                }
+            });
+        }
+    </script>
+
+    <!--MODAL script-->
+    <script>
+        var modal = document.getElementById('myModal-1');
+        var images = document.getElementsByClassName('myImages-1');
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption-1");
+
+        for (var i = 0; i < images.length; i++) {
+            var img = images[i];
+            img.onclick = function (evt) {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+        }
+
+        var span = document.getElementsByClassName("modal-1")[0];
+
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+    </script>
+
+    <!--Main Image-->
+    <script>
+        function myFunction(imgs) {
+            var expandImg = document.getElementById("expandedImg");
+            expandImg.src = imgs.src;
+            expandImg.parentElement.style.display = "block";
+        }
+        function myFunction2(imgs2) {
+            var expandImg2 = document.getElementById("expandedImg2");
+            expandImg2.src = imgs2.src;
+            expandImg2.parentElement.style.display = "block";
+        }
+        function myFunction3(imgs3) {
+            var expandImg3 = document.getElementById("expandedImg3");
+            expandImg3.src = imgs3.src;
+            expandImg3.parentElement.style.display = "block";
+        }
+        function myFunction4(imgs4) {
+            var expandImg4 = document.getElementById("expandedImg4");
+            expandImg4.src = imgs4.src;
+            expandImg4.parentElement.style.display = "block";
+        }
+    </script>
+
+    <!--Bootstrap-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>

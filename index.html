@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mirani Handmade Hungary</title>
+    <link rel="icon" type="image/x-icon" href="img/titleicon.PNG">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!--Cookiek-->
+    <div id="cookies">
+        <div>Az oldal sütiket használ. A 'Rendben' gombra kattintva ezt elfogadhatod.</div>
+        <button id="btn-cookie">Rendben</button>
+    </div>
+    
+    <!--Navbar-->
+    <div id="navi" class="navbar-1">
+        <div class="container-1 flex">
+            <a href="#"><img src="img/logo.jpg" alt=""></a>
+            <nav class="nav-2">
+                <span class="open-slide nav-mg">
+                    <a href="#" onclick="openSlideMenu()">
+                        <i class="fa fa-bars fa" aria-hidden="true"></i>
+                    </a>
+                </span>
+                <div class="tablet">
+                    <a href="#"><img src="img/logo.jpg" alt=""></a>
+                    <ul class="nav-display nav-mg">
+                        <div class="dropdown">
+                            <button onclick="dropbtn()" class="dropbtn">Karkötők<i
+                                    class="drop-fa fa fa-caret-down"></i></button>
+                            <div id="myDropdown" class="dropdown-content">
+                                <a href="woman.html">Női</a>
+                                <a href="man.html">Férfi</a>
+                            </div>
+                        </div>
+                        <li><a href="keychains.html">Kulcstartók</a></li>
+                        <li><a href="sets.html">Szettek</a></li>
+                        <li><a href="info.html">Információk</a></li>
+                        <li><a href="contacts.html"><i class="fa fa-fw fa-envelope"></i> Kapcsolat</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="social nav-mg">
+                <div class="social-1">
+                    <a href="https://www.facebook.com/profile.php?id=100075477592398"><i
+                            class="fab fa-facebook"></i></a>
+                </div>
+                <div class="social-2">
+                    <a href="https://www.tiktok.com/@miranihandmadehungary"><i class="fab fa-tiktok"></i></a>
+                </div>
+                <div class="social-3">
+                    <a href="https://www.instagram.com/miranihandmadehungary/"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <!--Hidden side menu-->
+
+            <div id="side-menu" class="side-nav">
+                <a href="#" class="btn-close-1" onclick="closeSlideMenu()">&times;</a>
+                <button class="dropdown-btn">Karkötők<i class="fa fa-caret-down"></i></button>
+                <div class="dropdown-container">
+                    <a href="woman.html">Női</a>
+                    <a href="man.html">Férfi</a>
+                </div>
+                <a href="keychains.html">Kulcstartók</a>
+                <a href="sets.html">Szettek</a>
+                <a href="info.html">Információk</a>
+                <a href="contacts.html"><i class="fa fa-fw fa-envelope"></i> Kapcsolat</a>
+            </div>
+        </div>
+    </div>
+
+    <!--Carousel and Title-->
+
+    <section class="mg-top p-3 bg-1">
+        <div class="grid-1">
+            <h2 class="text-2">Üdvözöllek a <span class="mcolor">Mirani</span>Handmade Hungarynél!</h2>
+            <div class="flex-2">
+                <div class="card myinfo p-3" id="myinfo">
+                    <h4>Rólam</h4>
+                    <p>Egyedi ásványkarkötőket készítek saját elképzelés alapján, gumis damilra fűzve. Az egész ötlet egy, az édesanyámtól ajándékba kapott ásványkarkötővel indult. Amikor jobban megismerkedtem az ásványokkal rájöttem, hogy ezt szeretném csinálni. Kezdetben magamnak, családtagoknak és barátoknak készítettem. <i class="far fa-grin-alt"></i>
+                    </p>
+                    <img id="handmade" src="img/hand1.png" alt="">
+                </div>
+                <div id="mycarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#mycarousel" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#mycarousel" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#mycarousel" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#mycarousel" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/carousel/20220830_160121.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/carousel/20220830_160620.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/carousel/20220830_160744.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/carousel/20220830_161056.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#mycarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#mycarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="text-1">
+                <p>Kövess Minket a Facebookon, az újdonságokról itt értesülhetsz először!</p>
+            </div>
+        </div>
+    </section>
+
+    <!--Image gallery-->
+
+    <section class="bg-1">
+        <h3 class="text-2">Ti küldtétek... <i class="far fa-grin-alt" style="font-size: 48px"></i></h3>
+        <div>
+            <div class="flex-2 sentpict">
+                <div>
+                    <img src="img/userpics/a2.jpg" class="rounded d-block" alt="...">
+                </div>
+                <div>
+                    <img src="img/userpics/a3.jpeg" class="rounded d-block" alt="...">
+                </div>
+                <div>
+                    <img src="img/userpics/a5.jpeg" class="rounded d-block" alt="...">
+                </div>
+                <div>
+                    <img src="img/userpics/a6.jpg" class="rounded d-block" alt="...">
+                </div>
+                <div>
+                    <img src="img/userpics/a7.jpeg" class="rounded d-block" alt="...">
+                </div>
+                <div>
+                    <img src="img/userpics/a8.jpg" class="rounded d-block" alt="...">
+                </div>
+                <div>
+                    <img src="img/userpics/a9.jpeg" class="rounded d-block" alt="...">
+                </div>
+                <div>
+                    <img src="img/userpics/a10.jpg" class="rounded d-block" alt="...">
+                </div>
+                <div>
+                    <img src="img/userpics/a11.jpeg" class="rounded d-block" alt="...">
+                </div>
+                <div>
+                    <img src="img/userpics/a12.jpg" class="rounded d-block" alt="...">
+                </div>
+                <div>
+                    <img src="img/userpics/a13.jpg" class="rounded d-block" alt="...">
+                </div>
+                <div>
+                    <img src="img/userpics/a14.jpg" class="rounded d-block" alt="...">
+                </div>
+                <div>
+                    <img src="img/userpics/a15.jpg" class="rounded d-block" alt="...">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+
+    <footer>
+        <div>
+            <div>
+                <h5>Mirani Handmade Hungary</h5>
+                <p>Copyright &copy; 2022</p>
+            </div>
+            <div class="social-foot">
+                <a href="https://www.facebook.com/profile.php?id=100075477592398"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.tiktok.com/@miranihandmadehungary"><i class="fab fa-tiktok"></i></a>
+                <a href="https://www.instagram.com/miranihandmadehungary/"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!--Cookiek-->
+    <script>
+        let btn_1 = document.querySelector("#btn-cookie");
+        btn_1.addEventListener("click", function () {
+            document.querySelector("#cookies").style.display = "none";
+        });
+    </script>
+
+    <!--Menu dropdown script-->
+    <script>
+        function dropbtn() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn, .drop-fa')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!--Show-hide main menu script-->
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function () {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById('navi').style.top = "0";
+            } else {
+                document.getElementById('navi').style.top = "-195px";
+            }
+            prevScrollpos = currentScrollPos;
+        }
+    </script>
+
+    <!--Show side menu script-->
+    <script>
+        function openSlideMenu() {
+            document.getElementById('side-menu').style.width = '250px';
+            document.getElementById('main').style.marginLeft = '250px';
+        }
+
+        function closeSlideMenu() {
+            document.getElementById('side-menu').style.width = '0px';
+            document.getElementById('main').style.marginLeft = '0px';
+        }
+    </script>
+
+    <!--Side menu dropdown script-->
+    <script>
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+
+        for (i = 0; i < dropdown.length; i++) {
+            dropdown[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var dropdownContent = this.nextElementSibling;
+                if (dropdownContent.style.display === "block") {
+                    dropdownContent.style.display = "none";
+                } else {
+                    dropdownContent.style.display = "block";
+                }
+            });
+        }
+    </script>
+
+    <!--Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>

@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mirani Handmade Hungary</title>
+    <link rel="icon" type="image/x-icon" href="img/titleicon.PNG">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!--Cookiek-->
+    <div id="cookies">
+        <div>Az oldal sütiket használ. A 'Rendben' gombra kattintva ezt elfogadhatod.</div>
+        <button id="btn-cookie">Rendben</button>
+    </div>
+    
+    <!--Navbar-->
+    <div id="navi" class="navbar-1">
+        <div class="container-1 flex">
+            <a href="index.html"><img src="img/logo.jpg" alt=""></a>
+            <nav class="nav-2">
+                <span class="open-slide nav-mg">
+                    <a href="#" onclick="openSlideMenu()">
+                        <i class="fa fa-bars fa" aria-hidden="true"></i>
+                    </a>
+                </span>
+                <div class="tablet">
+                    <a href="index.html"><img src="img/logo.jpg" alt=""></a>
+                    <ul class="nav-display nav-mg">
+                        <div class="dropdown">
+                            <button onclick="dropbtn()" class="dropbtn">Karkötők<i
+                                    class="drop-fa fa fa-caret-down"></i></button>
+                            <div id="myDropdown" class="dropdown-content">
+                                <a href="#">Női</a>
+                                <a href="man.html">Férfi</a>
+                            </div>
+                        </div>
+                        <li><a href="keychains.html">Kulcstartók</a></li>
+                        <li><a href="sets.html">Szettek</a></li>
+                        <li><a href="info.html">Információk</a></li>
+                        <li><a href="contacts.html"><i class="fa fa-fw fa-envelope"></i> Kapcsolat</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="social nav-mg">
+                <div class="social-1">
+                    <a href="https://www.facebook.com/profile.php?id=100075477592398"><i
+                            class="fab fa-facebook"></i></a>
+                </div>
+                <div class="social-2">
+                    <a href="https://www.tiktok.com/@miranihandmadehungary"><i class="fab fa-tiktok"></i></a>
+                </div>
+                <div class="social-3">
+                    <a href="https://www.instagram.com/miranihandmadehungary/"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <!--Hidden side menu-->
+
+            <div id="side-menu" class="side-nav">
+                <a href="#" class="btn-close-1" onclick="closeSlideMenu()">&times;</a>
+                <button class="dropdown-btn">Karkötők<i class="fa fa-caret-down"></i></button>
+                <div class="dropdown-container">
+                    <a href="#">Női</a>
+                    <a href="man.html">Férfi</a>
+                </div>
+                <a href="keychains.html">Kulcstartók</a>
+                <a href="sets.html">Szettek</a>
+                <a href="info.html">Információk</a>
+                <a href="contacts.html"><i class="fa fa-fw fa-envelope"></i> Kapcsolat</a>
+            </div>
+        </div>
+    </div>
+
+    <!--Bracelets-->
+
+    <section class="sect-3 p-3 bg-1 mg-top">
+        <h3 class="text-3"><span class="mcolor">Mirani</span>Női Karkötők</h3>
+        <div class="flex-2">
+            <div class="card-1 center sentpict m-2" style="width: 18rem;">
+                <div class="row-1">
+                    <div class="column">
+                        <img src="img/woman/achat1.jpeg" alt="" style="width:100%" onclick="myFunction(this);">
+                    </div>
+                    <div class="column">
+                        <img src="img/woman/achat2.jpeg" alt="" style="width:100%" onclick="myFunction(this);">
+                    </div>
+                    <div class="column">
+                        <img src="img/woman/achat3.jpeg" alt="" style="width:100%" onclick="myFunction(this);">
+                    </div>
+                </div>
+                <div class="container-img">
+                    <img class="myImages-1" src="img/woman/achat1.jpeg" alt="" id="expandedImg" style="width:100%">
+                </div>
+                <div class="grid-2">
+                    <p class="text-3">Achát és Ónix karkötő</p>
+                </div>
+            </div>
+            <div class="card-1 center sentpict m-2 p-1" style="width: 18rem;">
+                <div class="row-1">
+                    <div class="column">
+                        <img src="img/woman/blackheart1.jpeg" alt="" style="width:100%" onclick="myFunction2(this);">
+                    </div>
+                    <div class="column">
+                        <img src="img/woman/blackheart2.jpeg" alt="" style="width:100%" onclick="myFunction2(this);">
+                    </div>
+                    <div class="column">
+                        <img src="img/woman/blackheart3.jpeg" alt="" style="width:100%" onclick="myFunction2(this);">
+                    </div>
+                </div>
+                <div class="container-img">
+                    <img class="myImages-1" src="img/woman/blackheart1.jpeg" alt="" id="expandedImg2" style="width:100%">
+                </div>
+                <div class="grid-2">
+                    <p class="text-3">Szíves karkötő</p>
+                </div>
+            </div>
+            <div class="card-1 center sentpict m-2" style="width: 18rem;">
+                <div class="row-1">
+                    <div class="column">
+                        <img src="img/woman/chakra1.jpeg" alt="" style="width:100%" onclick="myFunction3(this);">
+                    </div>
+                    <div class="column">
+                        <img src="img/woman/chakra2.jpeg" alt="" style="width:100%" onclick="myFunction3(this);">
+                    </div>
+                    <div class="column">
+                        <img src="img/woman/chakra3.jpeg" alt="" style="width:100%" onclick="myFunction3(this);">
+                    </div>
+                </div>
+                <div class="container-img">
+                    <img class="myImages-1" src="img/woman/chakra1.jpeg" alt="" id="expandedImg3" style="width:100%">
+                </div>
+                <div class="grid-2">
+                    <p class="text-3">Chakra karkötő</p>
+                </div>
+            </div>
+            <div class="card-1 center sentpict m-2" style="width: 18rem;">
+                <div class="row-1">
+                    <div class="column">
+                        <img src="img/woman/chakra4.jpeg" alt="" style="width:100%" onclick="myFunction4(this);">
+                    </div>
+                    <div class="column">
+                        <img src="img/woman/chakra5.jpeg" alt="" style="width:100%" onclick="myFunction4(this);">
+                    </div>
+                    <div class="column">
+                        <img src="img/woman/chakra6.jpeg" alt="" style="width:100%" onclick="myFunction4(this);">
+                    </div>
+                </div>
+                <div class="container-img">
+                    <img class="myImages-1" src="img/woman/chakra4.jpeg" alt="" id="expandedImg4" style="width:100%">
+                </div>
+                <div class="grid-2">
+                    <p class="text-3">Chakra karkötő 2</p>
+                </div>
+            </div>
+            <div class="card-1 center sentpict m-2" style="width: 18rem;">
+                <div class="row-1">
+                    <div class="column">
+                        <img src="img/woman/colored1.jpeg" alt="" style="width:100%" onclick="myFunction5(this);">
+                    </div>
+                    <div class="column">
+                        <img src="img/woman/colored2.jpeg" alt="" style="width:100%" onclick="myFunction5(this);">
+                    </div>
+                    <div class="column">
+                        <img src="img/woman/colored3.jpeg" alt="" style="width:100%" onclick="myFunction5(this);">
+                    </div>
+                </div>
+                <div class="container-img">
+                    <img class="myImages-1" src="img/woman/colored1.jpeg" alt="" id="expandedImg5" style="width:100%">
+                </div>
+                <div class="grid-2">
+                    <p class="text-3">Jade karkötő medállal</p>
+                </div>
+            </div>
+            <div class="card-1 center sentpict m-2" style="width: 18rem;">
+                <div class="row-1">
+                    <div class="column">
+                        <img src="img/woman/crystal1.jpeg" alt="" style="width:100%" onclick="myFunction6(this);">
+                    </div>
+                    <div class="column">
+                        <img src="img/woman/crystal2.jpeg" alt="" style="width:100%" onclick="myFunction6(this);">
+                    </div>
+                    <div class="column">
+                        <img src="img/woman/crystal3.jpeg" alt="" style="width:100%" onclick="myFunction6(this);">
+                    </div>
+                </div>
+                <div class="container-img">
+                    <img class="myImages-1" src="img/woman/crystal1.jpeg" alt="" id="expandedImg6" style="width:100%">
+                </div>
+                <div class="grid-2">
+                    <p class="text-3">Szíves Jade karkötő</p>
+                </div>
+            </div>
+            <div class="card-1 center sentpict m-2" style="width: 18rem;">
+                <div class="row-1">
+                    <div class="column">
+                        <img src="img/woman/doublecryst1.jpeg" alt="" style="width:100%" onclick="myFunction7(this);">
+                    </div>
+                    <div class="column">
+                        <img src="img/woman/doublecryst2.jpeg" alt="" style="width:100%" onclick="myFunction7(this);">
+                    </div>
+                    <div class="column">
+                        <img src="img/woman/doublecryst3.jpeg" alt="" style="width:100%" onclick="myFunction7(this);">
+                    </div>
+                </div>
+                <div class="container-img">
+                    <img class="myImages-1" src="img/woman/doublecryst1.jpeg" alt="" id="expandedImg7" style="width:100%">
+                </div>
+                <div class="grid-2">
+                    <p class="text-3">Rózsakvarc és Hegyi kristály karkötő</p>
+                </div>
+            </div>
+            <div class="card-1 center sentpict m-2" style="width: 18rem;">
+                <div class="row-1">
+                    <div class="column">
+                        <img src="img/woman/doublered1.jpeg" alt="" style="width:100%" onclick="myFunction8(this);">
+                    </div>
+                    <div class="column">
+                        <img src="img/woman/doublered2.jpeg" alt="" style="width:100%" onclick="myFunction8(this);">
+                    </div>
+                    <div class="column">
+                        <img src="img/woman/doublered3.jpeg" alt="" style="width:100%" onclick="myFunction8(this);">
+                    </div>
+                </div>
+                <div class="container-img">
+                    <img class="myImages-1" src="img/woman/doublered1.jpeg" alt="" id="expandedImg8" style="width:100%">
+                </div>
+                <div class="grid-2">
+                    <p class="text-3">Jade és Hegyi kristály karkötő</p>
+                </div>
+            </div>
+            <div class="card-1 center sentpict m-2" style="width: 18rem;">
+                <div class="row-1">
+                    <div class="column">
+                        <img src="img/woman/doublewhite1.jpeg" alt="" style="width:100%" onclick="myFunction9(this);">
+                    </div>
+                    <div class="column">
+                        <img src="img/woman/doublewhite2.jpeg" alt="" style="width:100%" onclick="myFunction9(this);">
+                    </div>
+                    <div class="column">
+                        <img src="img/woman/doublewhite3.jpeg" alt="" style="width:100%" onclick="myFunction9(this);">
+                    </div>
+                </div>
+                <div class="container-img">
+                    <img class="myImages-1" src="img/woman/doublewhite1.jpeg" alt="" id="expandedImg9" style="width:100%">
+                </div>
+                <div class="grid-2">
+                    <p class="text-3">Fehér karkötő</p>
+                </div>
+            </div>
+            <div class="card-1 center sentpict m-2" style="width: 18rem;">
+                <div class="row-1">
+                    <div class="column">
+                        <img src="img/woman/flower1.jpeg" alt="" style="width:100%" onclick="myFunction10(this);">
+                    </div>
+                    <div class="column">
+                        <img src="img/woman/flower2.jpeg" alt="" style="width:100%" onclick="myFunction10(this);">
+                    </div>
+                    <div class="column">
+                        <img src="img/woman/flower3.jpeg" alt="" style="width:100%" onclick="myFunction10(this);">
+                    </div>
+                </div>
+                <div class="container-img">
+                    <img class="myImages-1" src="img/woman/flower1.jpeg" alt="" id="expandedImg10" style="width:100%">
+                </div>
+                <div class="grid-2">
+                    <p class="text-3">Virágos karkötő</p>
+                </div>
+            </div>
+            <div class="card-1 center sentpict m-2" style="width: 18rem;">
+                <div class="row-1">
+                    <div class="column">
+                        <img src="img/woman/heart1.jpeg" alt="" style="width:100%" onclick="myFunction11(this);">
+                    </div>
+                    <div class="column">
+                        <img src="img/woman/heart2.jpeg" alt="" style="width:100%" onclick="myFunction11(this);">
+                    </div>
+                    <div class="column">
+                        <img src="img/woman/heart3.jpeg" alt="" style="width:100%" onclick="myFunction11(this);">
+                    </div>
+                </div>
+                <div class="container-img">
+                    <img class="myImages-1" src="img/woman/heart1.jpeg" alt="" id="expandedImg11" style="width:100%">
+                </div>
+                <div class="grid-2">
+                    <p class="text-3">Szíves karkötő 2</p>
+                </div>
+            </div>
+            <div class="card-1 center sentpict m-2" style="width: 18rem;">
+                <div class="row-1">
+                    <div class="column">
+                        <img src="img/woman/hjade1.jpeg" alt="" style="width:100%" onclick="myFunction12(this);">
+                    </div>
+                    <div class="column">
+                        <img src="img/woman/hjade2.jpeg" alt="" style="width:100%" onclick="myFunction12(this);">
+                    </div>
+                    <div class="column">
+                        <img src="img/woman/hjade3.jpeg" alt="" style="width:100%" onclick="myFunction12(this);">
+                    </div>
+                </div>
+                <div class="container-img">
+                    <img class="myImages-1" src="img/woman/hjade1.jpeg" alt="" id="expandedImg12" style="width:100%">
+                </div>
+                <div class="grid-2">
+                    <p class="text-3">Oroszlánfejes Jade karkötő</p>
+                </div>
+            </div>
+            <div class="card-1 center sentpict m-2" style="width: 18rem;">
+                <div class="row-1">
+                    <div class="column">
+                        <img src="img/woman/howlit1.jpeg" alt="" style="width:100%" onclick="myFunction13(this);">
+                    </div>
+                    <div class="column">
+                        <img src="img/woman/howlit2.jpeg" alt="" style="width:100%" onclick="myFunction13(this);">
+                    </div>
+                    <div class="column">
+                        <img src="img/woman/howlit3.jpeg" alt="" style="width:100%" onclick="myFunction13(this);">
+                    </div>
+                </div>
+                <div class="container-img">
+                    <img class="myImages-1" src="img/woman/howlit1.jpeg" alt="" id="expandedImg13" style="width:100%">
+                </div>
+                <div class="grid-2">
+                    <p class="text-3">Howlit ásvány karkötő</p>
+                </div>
+            </div>
+            <div class="card-1 center sentpict m-2" style="width: 18rem;">
+                <div class="row-1">
+                    <div class="column">
+                        <img src="img/woman/pink1.jpeg" alt="" style="width:100%" onclick="myFunction14(this);">
+                    </div>
+                    <div class="column">
+                        <img src="img/woman/pink2.jpeg" alt="" style="width:100%" onclick="myFunction14(this);">
+                    </div>
+                    <div class="column">
+                        <img src="img/woman/pink3.jpeg" alt="" style="width:100%" onclick="myFunction14(this);">
+                    </div>
+                </div>
+                <div class="container-img">
+                    <img class="myImages-1" src="img/woman/pink1.jpeg" alt="" id="expandedImg14" style="width:100%">
+                </div>
+                <div class="grid-2">
+                    <p class="text-3">Angyalszárnyas Jade karkötő</p>
+                </div>
+            </div>
+            <div class="card-1 center sentpict m-2" style="width: 18rem;">
+                <div class="row-1">
+                    <div class="column">
+                        <img src="img/woman/pinkwhite1.jpeg" alt="" style="width:100%" onclick="myFunction15(this);">
+                    </div>
+                    <div class="column">
+                        <img src="img/woman/pinkwhite2.jpeg" alt="" style="width:100%" onclick="myFunction15(this);">
+                    </div>
+                    <div class="column">
+                        <img src="img/woman/pinkwhite3.jpeg" alt="" style="width:100%" onclick="myFunction15(this);">
+                    </div>
+                </div>
+                <div class="container-img">
+                    <img class="myImages-1" src="img/woman/pinkwhite1.jpeg" alt="" id="expandedImg15" style="width:100%">
+                </div>
+                <div class="grid-2">
+                    <p class="text-3">Rózsaszín-fehér karkötő</p>
+                </div>
+            </div>
+            <div class="card-1 center sentpict m-2" style="width: 18rem;">
+                <div class="row-1">
+                    <div class="column">
+                        <img src="img/woman/strawberry1.jpeg" alt="" style="width:100%" onclick="myFunction16(this);">
+                    </div>
+                    <div class="column">
+                        <img src="img/woman/strawberry2.jpeg" alt="" style="width:100%" onclick="myFunction16(this);">
+                    </div>
+                    <div class="column">
+                        <img src="img/woman/strawberry3.jpeg" alt="" style="width:100%" onclick="myFunction16(this);">
+                    </div>
+                </div>
+                <div class="container-img">
+                    <img class="myImages-1" src="img/woman/strawberry1.jpeg" alt="" id="expandedImg16" style="width:100%">
+                </div>
+                <div class="grid-2">
+                    <p class="text-3">Eperkvarc achát karkötő</p>
+                </div>
+            </div>
+            <div class="card-1 center sentpict m-2" style="width: 18rem;">
+                <div class="row-1">
+                    <div class="column">
+                        <img src="img/woman/wbuddha1.jpeg" alt="" style="width:100%" onclick="myFunction17(this);">
+                    </div>
+                    <div class="column">
+                        <img src="img/woman/wbuddha2.jpeg" alt="" style="width:100%" onclick="myFunction17(this);">
+                    </div>
+                    <div class="column">
+                        <img src="img/woman/wbuddha3.jpeg" alt="" style="width:100%" onclick="myFunction17(this);">
+                    </div>
+                </div>
+                <div class="container-img">
+                    <img class="myImages-1" src="img/woman/wbuddha1.jpeg" alt="" id="expandedImg17" style="width:100%">
+                </div>
+                <div class="grid-2">
+                    <p class="text-3">Buddha fejes karkötő</p>
+                </div>
+            </div>
+            <div class="card-1 center sentpict m-2" style="width: 18rem;">
+                <div class="row-1">
+                    <div class="column">
+                        <img src="img/woman/jadem1.jpeg" alt="" style="width:100%" onclick="myFunction18(this);">
+                    </div>
+                    <div class="column">
+                        <img src="img/woman/jadem2.jpeg" alt="" style="width:100%" onclick="myFunction18(this);">
+                    </div>
+                </div>
+                <div class="container-img">
+                    <img class="myImages-1" src="img/woman/jadem1.jpeg" alt="" id="expandedImg18" style="width:100%">
+                </div>
+                <div class="grid-2">
+                    <p class="text-3">Jade karkötő szives medállal</p>
+                </div>
+            </div>
+            <div id="myModal-1" class="modal-1 text-3">
+                <img class="modal-content-1" src="#" alt="" id="img01">
+                <div id="caption-1"></div>
+            </div>
+        </div>
+
+    </section>
+
+    <!--Footer-->
+
+    <footer>
+        <div>
+            <div>
+                <h5>Mirani Handmade Hungary</h5>
+                <p>Copyright &copy; 2022</p>
+            </div>
+            <div class="social-foot">
+                <a href="https://www.facebook.com/profile.php?id=100075477592398"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.tiktok.com/@miranihandmadehungary"><i class="fab fa-tiktok"></i></a>
+                <a href="https://www.instagram.com/miranihandmadehungary/"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!--Cookiek-->
+    <script>
+        let btn_1 = document.querySelector("#btn-cookie");
+        btn_1.addEventListener("click", function () {
+            document.querySelector("#cookies").style.display = "none";
+        });
+    </script>
+
+    <!--Menu dropdown script-->
+
+    <script>
+        function dropbtn() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn, .drop-fa')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!--Show-hide main menu script-->
+
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function () {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById('navi').style.top = "0";
+            } else {
+                document.getElementById('navi').style.top = "-195px";
+            }
+            prevScrollpos = currentScrollPos;
+        }
+    </script>
+
+    <!--Show side menu script-->
+
+    <script>
+        function openSlideMenu() {
+            document.getElementById('side-menu').style.width = '250px';
+            document.getElementById('main').style.marginLeft = '250px';
+        }
+
+        function closeSlideMenu() {
+            document.getElementById('side-menu').style.width = '0px';
+            document.getElementById('main').style.marginLeft = '0px';
+        }
+    </script>
+
+    <!--Side menu dropdown script-->
+
+    <script>
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+
+        for (i = 0; i < dropdown.length; i++) {
+            dropdown[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var dropdownContent = this.nextElementSibling;
+                if (dropdownContent.style.display === "block") {
+                    dropdownContent.style.display = "none";
+                } else {
+                    dropdownContent.style.display = "block";
+                }
+            });
+        }
+    </script>
+    <!--MODAL script-->
+    <script>
+        var modal = document.getElementById('myModal-1');
+        var images = document.getElementsByClassName('myImages-1');
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption-1");
+
+        for (var i = 0; i < images.length; i++) {
+            var img = images[i];
+            img.onclick = function (evt) {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+        }
+
+        var span = document.getElementsByClassName("modal-1")[0];
+
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+    </script>
+    <!--Main Image-->
+    <script>
+        function myFunction(imgs) {
+            var expandImg = document.getElementById("expandedImg");
+            expandImg.src = imgs.src;
+            expandImg.parentElement.style.display = "block";
+        }
+        function myFunction2(imgs2) {
+            var expandImg2 = document.getElementById("expandedImg2");
+            expandImg2.src = imgs2.src;
+            expandImg2.parentElement.style.display = "block";
+        }
+        function myFunction3(imgs3) {
+            var expandImg3 = document.getElementById("expandedImg3");
+            expandImg3.src = imgs3.src;
+            expandImg3.parentElement.style.display = "block";
+        }
+        function myFunction4(imgs4) {
+            var expandImg4 = document.getElementById("expandedImg4");
+            expandImg4.src = imgs4.src;
+            expandImg4.parentElement.style.display = "block";
+        }
+        function myFunction5(imgs5) {
+            var expandImg5 = document.getElementById("expandedImg5");
+            expandImg5.src = imgs5.src;
+            expandImg5.parentElement.style.display = "block";
+        }
+        function myFunction6(imgs6) {
+            var expandImg6 = document.getElementById("expandedImg6");
+            expandImg6.src = imgs6.src;
+            expandImg6.parentElement.style.display = "block";
+        }
+        function myFunction7(imgs7) {
+            var expandImg7 = document.getElementById("expandedImg7");
+            expandImg7.src = imgs7.src;
+            expandImg7.parentElement.style.display = "block";
+        }
+        function myFunction8(imgs8) {
+            var expandImg8 = document.getElementById("expandedImg8");
+            expandImg8.src = imgs8.src;
+            expandImg8.parentElement.style.display = "block";
+        }
+        function myFunction9(imgs9) {
+            var expandImg9 = document.getElementById("expandedImg9");
+            expandImg9.src = imgs9.src;
+            expandImg9.parentElement.style.display = "block";
+        }
+        function myFunction10(imgs10) {
+            var expandImg10 = document.getElementById("expandedImg10");
+            expandImg10.src = imgs10.src;
+            expandImg10.parentElement.style.display = "block";
+        }
+        function myFunction11(imgs11) {
+            var expandImg11 = document.getElementById("expandedImg11");
+            expandImg11.src = imgs11.src;
+            expandImg11.parentElement.style.display = "block";
+        }
+        function myFunction12(imgs12) {
+            var expandImg12 = document.getElementById("expandedImg12");
+            expandImg12.src = imgs12.src;
+            expandImg12.parentElement.style.display = "block";
+        }
+        function myFunction13(imgs13) {
+            var expandImg13 = document.getElementById("expandedImg13");
+            expandImg13.src = imgs13.src;
+            expandImg13.parentElement.style.display = "block";
+        }
+        function myFunction14(imgs14) {
+            var expandImg14 = document.getElementById("expandedImg14");
+            expandImg14.src = imgs14.src;
+            expandImg14.parentElement.style.display = "block";
+        }
+        function myFunction15(imgs15) {
+            var expandImg15 = document.getElementById("expandedImg15");
+            expandImg15.src = imgs15.src;
+            expandImg15.parentElement.style.display = "block";
+        }
+        function myFunction16(imgs16) {
+            var expandImg16 = document.getElementById("expandedImg16");
+            expandImg16.src = imgs16.src;
+            expandImg16.parentElement.style.display = "block";
+        }
+        function myFunction17(imgs17) {
+            var expandImg17 = document.getElementById("expandedImg17");
+            expandImg17.src = imgs17.src;
+            expandImg17.parentElement.style.display = "block";
+        }
+        function myFunction18(imgs18) {
+            var expandImg18 = document.getElementById("expandedImg18");
+            expandImg18.src = imgs18.src;
+            expandImg18.parentElement.style.display = "block";
+        }
+    </script>
+
+    <!--Bootstrap-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
